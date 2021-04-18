@@ -1,0 +1,85 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hide { display:none }
+  </style>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $(".but").on("click",function(e) {
+        e.preventDefault();
+        $(".content").hide();
+        $("#"+this.id+"_div").show();
+      });
+    });
+  </script>
+</head>
+
+  <body class="fullpage">
+    <section class="introbanner">
+      <div style="text-align: center; margin: 0">
+        THE KING OF FRUITS, Mangifera indica aka MANGO is here.
+      </div>
+    </section>
+    <div class="navbar">
+      <div>
+        <button class="but" id="about_us" type="button">About us</button>
+        <button class="but" id="contac_us" type="button">Contact us</button>
+        <!--<a href="#">Contact us</a>-->
+      </div>
+    </div>
+
+    <div id="about_us_div" class="content">
+      <img src="images/Copy of Project - Drawing 13855355261481110382.png" style="width:256px;height:256px;">
+      <div>
+        Sathvi Farms presenting you Farm Fresh mangoes from red hue lands of bendapudi ,Near Annavaram,East Godavari Dst. We, as a large Farm developed by the most experienced
+        farmers which results in best quality of mangoes. We follow Sustainable farming methods to deliver king of fruit to your kingdom.
+        <br><br>
+        WHAT DO YOU GET?
+
+        Quality, Farm Fresh Mangoes at Best Price delivered to your home.
+        Know what you eat, where you get it from.
+        Taste the varieties that you never tasted.
+        naturally ripened, Carbide and Chemical free mangoes.
+
+        <br><br>
+
+        WHAT DO WE GET?
+
+        Enhancing the quality of product based on Consumer reviews.
+        Initiating groups with near by farmers to meet future demand.
+        Ensuring the group of farmers to follow same farming methods.
+        we being Farmers , We get to sell our Mangoes.
+
+        <br><br>
+
+        This summer, Chain yourself to your homes and stop the spread of Covid-19. But there is no happiness in summer, other than gulping a basket full of mangoes. Since you can't
+        step out, we will do it for you
+
+        <br><br>
+
+        we have more than 10 varities:
+        <ul>
+          <li>banginapalli</li>
+          <li>kothapalli kobbari</li>
+          <li>rasalu</li>
+          <li>Suvarna Rekha</li>
+          <li>panduri mamidi</li>
+          <li>imam pasand</li>
+          <li>panchadara kalsa</li>
+          <li>paparaju gouva</li>
+          <li>kalolam mamidi.....etc</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div id="contac_us_div" class="hide content">
+      For enquiries & preorders
+      9105769999
+      sathvi.farms
+      sathvifarms.in
+    </div>
+  </body>
+</html>
